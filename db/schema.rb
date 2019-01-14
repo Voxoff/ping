@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_01_14_134433) do
     t.bigint "user_id"
     t.datetime "finished_at"
     t.boolean "assigned"
+    t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_tickets_on_user_id"
